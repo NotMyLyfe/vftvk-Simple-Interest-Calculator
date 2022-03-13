@@ -15,7 +15,7 @@ function compute() // Function for computing interest and displaying it to user
     // Finds when you'll receive the interest
     var year = new Date().getFullYear()+parseInt(years);
     // Displays it to the user on the "results" span
-    document.getElementById("result").innerHTML=`If you deposit ${principal},\<br\>at an interest rate of ${rate}%\<br\>You will receive an amount of ${interest},\<br\> in the year ${year}\<br\>`
+    document.getElementById("result").innerHTML=`If you deposit <span class="highlight">${principal}</span>,\<br\>at an interest rate of <span class="highlight">${rate}%</span>.\<br\>You will receive an amount of <span class="highlight">${interest}</span>,\<br\> in the year <span class="highlight">${year}</span>\<br\>`
 }
 
 // Updates the interest rate as the user slides
